@@ -1,9 +1,9 @@
 const cacheName = "DefaultCompany-Zenrock-1.0";
 const contentToCache = [
     "Build/5336a4b2c43054286fd70b1faa467eee.loader.js",
-    "Build/c6ba860137c060abd135c1ec611ca73b.framework.js.unityweb",
-    "Build/c392b716af5eda9f2e0aef84a0369029.data.unityweb",
-    "Build/78975d6e95a16ed1f0e1d438b2fd872f.wasm.unityweb",
+    "Build/92e5a721a0ec6814b3c8c3c4083150cb.framework.js.unityweb",
+    "Build/be1e2120abbc8c9287c54d092ff7bc02.data.unityweb",
+    "Build/077f11420dd7e7b1ed03392f85cf45bd.wasm.unityweb",
     "TemplateData/style.css"
 
 ];
