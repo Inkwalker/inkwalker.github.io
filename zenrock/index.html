@@ -31,7 +31,7 @@
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Zenrock",
-        productVersion: "1.0.28",
+        productVersion: "1.0.29",
         // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
         // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
       }).then(instance => {
@@ -39,7 +39,8 @@
           characterImageUrl: "https://zenrock-tg-miniapp-avatars.s3.eu-west-1.amazonaws.com/b7b53f0cc1ba3e7ce13cfd5224be2379-pfp.png",
           nickname: "TestUser",
           clanName: "Dev",
-          points: 2000,
+          points: 50,
+          stage: 1,
           ownedBoosts: [
           {
             id: "50234138-6cdc-4dcd-b61b-0ab22a2e7dae",
@@ -56,8 +57,7 @@
           {
             id: "329c2cb8-3b42-41b2-8e57-2a2f43e1b4f6",
             quantity: 2
-          }],
-          stage: 1
+          }]
         }
         instance.Module.Zenrock.SendPlayerData(gameData);
       });
