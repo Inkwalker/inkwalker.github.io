@@ -6,7 +6,6 @@
     <title>Unity Web Player | My project</title>
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
-      <button id="test_button">Test</button>
     <canvas id="unity-canvas" width=960 height=600 tabindex="-1" style="width: 960px; height: 600px; background: #231F20"></canvas>
     <script src="Build/test.loader.js"></script>
     <script>
@@ -36,8 +35,6 @@
         productVersion: "1.0",
         // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
         // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
-      }).then((instance) => {
-          instance.Module.Zenrock.helloWorld();
       });
     </script>
   </body>
