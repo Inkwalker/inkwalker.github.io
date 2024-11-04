@@ -11,6 +11,8 @@
             dialog.showModal();
             this.isDialogOpen = true;
             this.callback = callback;
+
+            this.form.reset();
         },
         init: function () {
             this.dialog = document.querySelector('#airdrop-modal');
