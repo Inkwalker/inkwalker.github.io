@@ -8,10 +8,35 @@
     <link rel="stylesheet" href="TemplateData/style.css">
     <link rel="manifest" href="manifest.webmanifest">
 
+    <link rel="stylesheet" href="/modal.css">
+    <script src="/modal.js"></script>
+
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </head>
   <body>
     <div id="unity-container">
+      <dialog id="airdrop-modal" class="modal">
+        <img src="/airdrop.svg" alt="airdrop">
+        <div class="modal-content">
+          <div class="modal-text">
+            <h2>Airdrop Submission</h2>
+            <p>Insert your wallet to be eligible for future airdrops of $BOOH Token or other rewards</p>
+          </div>
+          <form id="airdrop-form">
+            <div class="input-container">
+              <label for="wallet">Wallet Address</label>
+              <input type="text"
+               maxlength="44"
+               pattern="[a-zA-Z0-9]+"
+               id="wallet"
+               name="wallet"
+               placeholder="Submit your Wallet"
+               required>
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </dialog>
       <canvas id="unity-canvas" width=428 height=926 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
@@ -22,6 +47,8 @@
       <div id="unity-warning"> </div>
     </div>
     <script>
+      window.AirDropModal.init();
+      
       window.addEventListener("load", function () {
         if ("serviceWorker" in navigator) {
           navigator.serviceWorker.register("ServiceWorker.js").then(reg => {
@@ -76,7 +103,7 @@
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Booh Brawlers",
-        productVersion: "1.0.90",
+        productVersion: "1.0.92",
         showBanner: unityShowBanner,
       };
 
