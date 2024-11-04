@@ -61,6 +61,7 @@ p {
     flex-direction: column;
     width: 100%;
     gap: 24px;
+    font-family: 'Marykate', sans-serif;
 }
 
 .input-container {
