@@ -61,7 +61,6 @@ p {
     flex-direction: column;
     width: 100%;
     gap: 24px;
-    font-family: 'Marykate', sans-serif;
 }
 
 .input-container {
@@ -77,11 +76,13 @@ p {
     border-radius: 12px;
     font-size: var(--small-text);
     color: var(--grey);
+    font-family: 'Marykate', sans-serif;
 }
 
 .input-container label {
     font-size: var(--small-text);
     font-weight: 400;
+    font-family: 'Marykate', sans-serif;
 }
 
 #airdrop-form button {
