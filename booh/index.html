@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="TemplateData/style.css">
     <link rel="manifest" href="manifest.webmanifest">
 
-    <link rel="stylesheet" href="/modal.css">
-    <script src="/modal.js"></script>
+    <link rel="stylesheet" href="TemplateData/modal.css">
+    <script src="TemplateData/modal.js"></script>
 
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </head>
   <body>
     <div id="unity-container">
       <dialog id="airdrop-modal" class="modal">
-        <img src="/airdrop.svg" alt="airdrop">
+        <img src="TemplateData/airdrop.svg" alt="airdrop">
         <div class="modal-content">
           <div class="modal-text">
             <h2>Airdrop Submission</h2>
@@ -48,7 +48,7 @@
     </div>
     <script>
       window.AirDropModal.init();
-      
+
       window.addEventListener("load", function () {
         if ("serviceWorker" in navigator) {
           navigator.serviceWorker.register("ServiceWorker.js").then(reg => {
@@ -103,7 +103,7 @@
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Booh Brawlers",
-        productVersion: "1.0.92",
+        productVersion: "1.0.93",
         showBanner: unityShowBanner,
       };
 
