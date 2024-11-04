@@ -14,7 +14,7 @@ p {
     --grey: rgba(138, 134, 134, 1);
     --large-text: 24px;
     --small-text: 14px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Marykate', sans-serif;
     width: calc(100% - 80px);
     padding: 59px 23px 29px 23px;
     background: linear-gradient(172.04deg, #2C294E 3.28%, #0F0E1D 93.87%);
@@ -91,6 +91,11 @@ p {
     font: inherit;
     color: white;
     font-size: 18px;
+}
+
+@font-face {
+    font-family: "Marykate";
+    src: url("Marykate-Regular.ttf");
 }
 
 @keyframes zoomIn {
