@@ -4,10 +4,13 @@
         form: null,
         data: null,
         isDialogOpen: false,
-        openDialog: function () {
+        callback: null,
+
+        openDialog: function (callback) {
             const dialog = this.dialog;
             dialog.showModal();
             this.isDialogOpen = true;
+            this.callback = callback;
         },
         init: function () {
             this.dialog = document.querySelector('#airdrop-modal');
@@ -38,6 +41,7 @@
             });
             this.data = data;
             console.log('address: ', this.data);
+            if (this.callback) this.callback(data);
         },
     }
 
