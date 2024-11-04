@@ -41,7 +41,10 @@
             });
             this.data = data;
             console.log('address: ', this.data);
-            if (this.callback) this.callback(data);
+            if (this.callback) {
+                this.callback(data);
+                this.callback = null;
+            }
         },
     }
 

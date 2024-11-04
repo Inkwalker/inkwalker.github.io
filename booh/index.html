@@ -24,13 +24,14 @@
           </div>
           <form id="airdrop-form">
             <div class="input-container">
-              <label for="wallet">Wallet Address</label>
+              <label for="wallet">Solana Wallet Address</label>
               <input type="text"
                maxlength="44"
+               minlength="44"
                pattern="[a-zA-Z0-9]+"
                id="wallet"
                name="wallet"
-               placeholder="Submit your Wallet"
+               placeholder="Submit your Solana wallet"
                required>
             </div>
             <button type="submit">Submit</button>
@@ -103,7 +104,7 @@
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Booh Brawlers",
-        productVersion: "1.0.98",
+        productVersion: "1.0.99",
         showBanner: unityShowBanner,
       };
 
